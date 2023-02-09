@@ -7,6 +7,7 @@ const Navigation = (props) =>
 {
   return (
     <AuthContext.Consumer>
+      {(ctx) => { }}
       <nav className={classes.nav}>
         <ul>
           {props.isLoggedIn && (
