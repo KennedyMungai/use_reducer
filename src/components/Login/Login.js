@@ -73,7 +73,7 @@ const Login = (props) =>
     {
       console.log('Checking form validity!');
       setFormIsValid(
-        enteredEmail.includes('@') && enteredPassword.trim().length > 6
+        emailState.isValid && passwordState.isValid
       );
     }, 500);
 
