@@ -18,7 +18,7 @@ const Login = (props) =>
     {
       return {
         value: action.val,
-        isValid: action.valid.includes('@')
+        isValid: action.val.includes('@')
       }
     }
 
