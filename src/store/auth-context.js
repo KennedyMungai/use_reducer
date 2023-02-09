@@ -9,6 +9,11 @@ export const AuthContextProvider = (props) =>
 {
     const [isLoggedIn, setIsLoggedIn] = useState(false)
 
+    const logoutHandler = () => 
+    {
+        setIsLoggedIn(false)
+    }
+
     return <AuthContext.Provider>
         {props.children}
     </AuthContext.Provider>
