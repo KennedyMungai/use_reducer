@@ -14,6 +14,11 @@ export const AuthContextProvider = (props) =>
         setIsLoggedIn(false)
     }
 
+    const loginHandler = () => 
+    {
+        setIsLoggedIn(true)
+    }
+
     return <AuthContext.Provider>
         {props.children}
     </AuthContext.Provider>
