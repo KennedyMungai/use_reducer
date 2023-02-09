@@ -26,7 +26,7 @@ const Login = (props) =>
     {
       return {
         value: state.value,
-        isValid: false
+        isValid: state.value.includes('@')
       }
     }
 
