@@ -8,16 +8,13 @@ import AuthContext from './store/auth-context';
 function App()
 {
   return (
-    <AuthContext.Provider value={{
-      isLoggedIn: isLoggedIn,
-      onLogout: logoutHandler
-    }}>
+    <>
       <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
       <main>
         {!isLoggedIn && <Login onLogin={loginHandler} />}
         {isLoggedIn && <Home onLogout={logoutHandler} />}
       </main>
-    </AuthContext.Provider>
+    </>
   );
 }
 
