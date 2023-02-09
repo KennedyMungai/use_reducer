@@ -55,6 +55,7 @@ const Login = (props) =>
   }
 
   const [emailState, dispatchEmail] = useReducer(emailReducer, { value: '', isValid: false })
+  const [passwordState, dispatchPassword] = useReducer(passwordReducer, { value: '', isValid: null })
 
   useEffect(() =>
   {
