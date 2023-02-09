@@ -1,3 +1,5 @@
 import React, { createContext } from 'react'
 
-createContext()
+const AuthContext = createContext({
+    isLoggedIn: false
+})
