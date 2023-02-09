@@ -2,7 +2,8 @@ import { createContext, useState } from 'react'
 
 const AuthContext = createContext({
     isLoggedIn: false,
-    onLogOut: () => { }
+    onLogOut: () => { },
+    onLogin: () => { }
 })
 
 export const AuthContextProvider = (props) =>
