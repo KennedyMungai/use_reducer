@@ -22,6 +22,14 @@ const Login = (props) =>
       }
     }
 
+    if (action.type === 'INPUT_BLUR')
+    {
+      return {
+        value: '',
+        isValid: false
+      }
+    }
+
     return { value: '', isValid: false }
   }
 
