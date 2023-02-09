@@ -57,7 +57,7 @@ const Login = (props) =>
     setEnteredPassword(event.target.value);
 
     setFormIsValid(
-      enteredEmail.includes('@') && event.target.value.trim().length > 6
+      emailState.value.includes('@') && event.target.value.trim().length > 6
     );
   };
 
