@@ -82,7 +82,7 @@ const Login = (props) =>
       console.log('CLEANUP');
       clearTimeout(identifier);
     };
-  }, [enteredEmail, enteredPassword]);
+  }, [emailState, passwordState]);
 
   const emailChangeHandler = (event) =>
   {
