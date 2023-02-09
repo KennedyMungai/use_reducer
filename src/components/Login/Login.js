@@ -92,7 +92,7 @@ const Login = (props) =>
 
   const passwordChangeHandler = (event) =>
   {
-    setEnteredPassword(event.target.value);
+    dispatchPassword({ type: 'USER_INPUT', val: event.target.value })
 
     setFormIsValid(
       emailState.isValid && event.target.value.trim().length > 6
