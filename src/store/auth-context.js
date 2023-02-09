@@ -19,7 +19,11 @@ export const AuthContextProvider = (props) =>
         setIsLoggedIn(true)
     }
 
-    return <AuthContext.Provider>
+    return <AuthContext.Provider value={{
+        isLoggedIn: isLoggedIn,
+        onLogOut: logoutHandler,
+        onLogin: loginHandler
+    }}>
         {props.children}
     </AuthContext.Provider>
 }
