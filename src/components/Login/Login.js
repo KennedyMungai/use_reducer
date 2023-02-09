@@ -14,6 +14,14 @@ const Login = (props) =>
 
   const emailReducer = (state, action) =>
   {
+    if (action.type === 'USER_INPUT')
+    {
+      return {
+        value: action.val,
+        isValid: action.valid.includes('@')
+      }
+    }
+
     return { value: '', isValid: false }
   }
 
