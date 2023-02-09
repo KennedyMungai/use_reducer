@@ -13,8 +13,8 @@ function App()
     <>
       <MainHeader isAuthenticated={isLoggedIn} onLogout={logoutHandler} />
       <main>
-        {!isLoggedIn && <Login onLogin={loginHandler} />}
-        {isLoggedIn && <Home onLogout={logoutHandler} />}
+        {!ctx.isLoggedIn && <Login onLogin={loginHandler} />}
+        {ctx.isLoggedIn && <Home onLogout={logoutHandler} />}
       </main>
     </>
   );
