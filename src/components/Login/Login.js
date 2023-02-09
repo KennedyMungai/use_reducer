@@ -25,7 +25,7 @@ const Login = (props) =>
     if (action.type === 'INPUT_BLUR')
     {
       return {
-        value: '',
+        value: state.value,
         isValid: false
       }
     }
