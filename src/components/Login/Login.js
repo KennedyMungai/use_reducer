@@ -12,7 +12,12 @@ const Login = (props) =>
   const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
 
-  const [emailState, dispatchEmail] = useReducer(, second, third)
+  const emailReducer = (state, action) =>
+  {
+    return { value: '', isValid: false }
+  }
+
+  const [emailState, dispatchEmail] = useReducer(emailReducer, { value: '', isValid: false })
 
   useEffect(() =>
   {
