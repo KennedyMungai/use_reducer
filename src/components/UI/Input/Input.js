@@ -2,7 +2,7 @@ import React, { useImperativeHandle, useRef } from 'react'
 
 import classes from './Input.module.css'
 
-const Input = React.forwardRef(props, ref) =>
+const Input = React.forwardRef((props, ref) =>
 {
     const inputRef = useRef()
 
@@ -37,6 +37,6 @@ const Input = React.forwardRef(props, ref) =>
             />
         </div>
     )
-}
+})
 
 export default Input
