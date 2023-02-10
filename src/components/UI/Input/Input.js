@@ -6,6 +6,11 @@ const Input = (props) =>
 {
     const inputRef = useRef()
 
+    const activate = () => 
+    {
+        inputRef.current.focus()
+    }
+
     return (
         <div
             className={`${classes.control} ${props.isValid === false ? classes.invalid : ''
