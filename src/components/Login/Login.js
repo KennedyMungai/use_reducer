@@ -153,6 +153,7 @@ const Login = () =>
           value={emailState.value}
           onChange={emailChangeHandler}
           onBlur={validateEmailHandler}
+          ref={emailInputRef}
         />
         <Input
           id="password"
@@ -162,6 +163,7 @@ const Login = () =>
           value={passwordState.value}
           onChange={passwordChangeHandler}
           onBlur={validatePasswordHandler}
+          ref={passwordInputRef}
         />
         <div className={classes.actions}>
           <Button
