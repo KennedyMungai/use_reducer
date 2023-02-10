@@ -8,7 +8,7 @@ const Input = (props) =>
 
     useEffect(() =>
     {
-
+        inputRef.current.focus()
     }, [])
 
 
