@@ -124,7 +124,19 @@ const Login = () =>
   const submitHandler = (event) =>
   {
     event.preventDefault();
-    authCtx.onLogin(emailState.value, passwordState.value);
+
+    if (formIsValid)
+    {
+      authCtx.onLogin(emailState.value, passwordState.value);
+    }
+    else if (!emailIsValid)
+    {
+
+    }
+    else
+    {
+
+    }
   };
 
   return (
