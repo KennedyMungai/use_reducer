@@ -16,6 +16,9 @@ const Login = () =>
 
   const authCtx = useContext(AuthContext)
 
+  const emailInputRef = useRef()
+  const passwordInputRef = useRef()
+
   const emailReducer = (state, action) =>
   {
     if (action.type === 'USER_INPUT')
