@@ -4,6 +4,7 @@ import Card from '../UI/Card/Card';
 import classes from './Login.module.css';
 import Button from '../UI/Button/Button';
 import AuthContext from '../../store/auth-context';
+import Input from '../UI/Input/Input';
 
 const Login = () =>
 {
@@ -129,7 +130,7 @@ const Login = () =>
   return (
     <Card className={classes.login}>
       <form onSubmit={submitHandler}>
-
+        <Input />
         <div
           className={`${classes.control} ${passwordState.isValid === false ? classes.invalid : ''
             }`}
