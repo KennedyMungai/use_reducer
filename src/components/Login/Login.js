@@ -135,6 +135,9 @@ const Login = () =>
           label="E-Mail"
           type="email"
           isValid={emailIsValid}
+          value={emailState.value}
+          onChange={emailChangeHandler}
+          onBlur={validateEmailHandler}
         />
         <div
           className={`${classes.control} ${passwordState.isValid === false ? classes.invalid : ''
