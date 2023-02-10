@@ -134,7 +134,7 @@ const Login = () =>
     }
     else if (!emailIsValid)
     {
-
+      emailInputRef.current.activate()
     }
     else
     {
