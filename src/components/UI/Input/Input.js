@@ -2,7 +2,7 @@ import React, { useImperativeHandle, useRef } from 'react'
 
 import classes from './Input.module.css'
 
-const Input = (props, ref) =>
+const Input = React.forwardRef(props, ref) =>
 {
     const inputRef = useRef()
 
