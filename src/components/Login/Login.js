@@ -138,7 +138,7 @@ const Login = () =>
     }
     else
     {
-
+      passwordInputRef.current.activate()
     }
   };
 
