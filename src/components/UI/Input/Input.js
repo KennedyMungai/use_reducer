@@ -4,7 +4,7 @@ import classes from './Input.module.css'
 
 const Input = (props) =>
 {
-    const inoutRef = useRef()
+    const inputRef = useRef()
 
     return (
         <div
