@@ -6,6 +6,12 @@ const Input = (props) =>
 {
     const inputRef = useRef()
 
+    useEffect(() =>
+    {
+
+    }, [])
+
+
     return (
         <div
             className={`${classes.control} ${props.isValid === false ? classes.invalid : ''
@@ -18,6 +24,7 @@ const Input = (props) =>
                 value={props.value}
                 onChange={props.onChange}
                 onBlur={props.onBlur}
+                ref={inputRef}
             />
         </div>
     )
