@@ -130,7 +130,12 @@ const Login = () =>
   return (
     <Card className={classes.login}>
       <form onSubmit={submitHandler}>
-        <Input />
+        <Input
+          id="email"
+          label="E-Mail"
+          type="email"
+          isValid={emailIsValid}
+        />
         <div
           className={`${classes.control} ${passwordState.isValid === false ? classes.invalid : ''
             }`}
