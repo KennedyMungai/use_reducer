@@ -2,7 +2,7 @@ import React, { useImperativeHandle, useRef } from 'react'
 
 import classes from './Input.module.css'
 
-const Input = (props) =>
+const Input = (props, ref) =>
 {
     const inputRef = useRef()
 
@@ -10,6 +10,16 @@ const Input = (props) =>
     {
         inputRef.current.focus()
     }
+
+    useImperativeHandle(
+        ref,
+        () =>
+        {
+            return {
+                focus: activate
+            }
+        },
+    )
 
     return (
         <div
